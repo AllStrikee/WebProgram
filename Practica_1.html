@@ -2,27 +2,29 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Страница для первой практики</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body style="background-color: #f8f9fa; font-family: Arial, sans-serif; margin: 20px; padding: 20px;">
-    <h1 style="color: #2c3e50; text-align: center;">Первый заголовок!</h1>
-    <p style="font-size: 18px; line-height: 1.5; color: #34495e;">Первый текст в первом зоголовке!</p>
+<body>
+    <h1 id="h1">Первый заголовок!</h1>
+    <p class="main-text">Первый текст в первом зоголовке!</p>
 
-    <h2 style="color: #16a085; border-bottom: 2px solid #16a085; padding-bottom: 5px;">Перый подзаголовок!</h2>
+    <h2 id="h2">Перый подзаголовок!</h2>
 
-    <div style="display: flex; gap: 30px; margin: 30px 0;">
-        <div style="flex: 1; background-color: white; padding: 20px; border-radius: 30px; box-shadow: 0 1px 10px rgba(0,0,0,0.15);">
-            <p style="font-weight: bold; color: #e74c3c;">Виды текста:</p>
-            <ul style="list-style-type: square; color: mediumseagreen;">
+    <div class="grid-container">
+        <div class="card">
+            <p class="card-title">Виды текста:</p>
+            <ul class="square-list">
                 <li> <b> Жирный текст </b></li>
                 <li><i>Курсивный текст</i></li>
                 <li><u>С чертой текст</u></li>
             </ul>
         </div>
 
-        <div style="flex: 1; background-color: white; padding: 20px; border-radius: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-            <p style="font-weight: bold; color: #e74c3c;">Пронумерованные виды текста:</p>
-            <ol style="color: #2980b9;">
+        <div class="card">
+            <p class="card-title">Пронумерованные виды текста:</p>
+            <ol class="numbered_list">
                 <li><b>Жирный текст</b></li>
                 <li><i>Курсивный текст</i></li>
                 <li><u>С чертой текст</u></li>
@@ -31,46 +33,34 @@
     </div>
 
 
-    <div style="background-color: #f5f6fa; padding: 15px; border-radius: 30px; box-shadow: 0 1px 5px rgba(0,0,0,0.2)">
-        <p style="margin: 0; color: #34495e;">Таблица:</p>
-        <table style="border-collapse: collapse ; width: 100%; margin-top: 10px;">
-            <tr style="background-color: #2980b9; color: white;">
-                <th style="padding: 12px; border: 1px solid #2980b9;">Что-то)</th>
-                <th style="padding: 12px; border: 1px solid #2980b9;">Количество чего-то)</th>
+    <div class="table-container">
+        <p>Таблица:</p>
+        <table>
+            <tr class="table-header">
+                <th>Что-то)</th>
+                <th>Количество чего-то)</th>
             </tr>
             <tr>
-                <td style="padding: 10px; border: 1px solid #bdc3c7;">Первое что-то</td>
-                <td style="padding: 10px; border: 1px solid #bdc3c7;">100 чего-то</td>
+                <td>Первое что-то</td>
+                <td>100 чего-то</td>
             </tr>
-            <tr style="background-color: #f5f6fa;">
-                <td style="padding: 10px; border: 1px solid #bdc3c7;">Второе что-то</td>
-                <td style="padding: 10px; border: 1px solid #bdc3c7;">10 чего-то</td>
+            <tr class="table-row">
+                <td>Второе что-то</td>
+                <td>10 чего-то</td>
             </tr>
         </table>
     </div>
 
-    <div style="margin: 25px 0; text-align: center;">
-        <a href="https://clck.ru/3LqmR3"
-           target="_blank"
-           style="display: inline-block;
-                  padding: 15px 40px;
-                  background-color: #e67e22;
-                  color: white;
-                  text-decoration: none;
-                  border-radius: 30px;
-                  transition: background-color 0.3s;"
-           onmouseover="this.style.backgroundColor='#d35400'"
-           onmouseout="this.style.backgroundColor='#e67e22'">
+    <div class="button-container">
+        <a href="https://clck.ru/3LqmR3" target="_blank" class="link-button">
             Ссылка на картинки
         </a>
     </div>
 
-    <div style="display: flex; justify-content: center; margin: 20px 0;">
+    <div class="image-container">
         <img src="https://proudalenku.ru/wp-content/uploads/2021/05/chto-dolzhen-znat-veb-programmist.png"
              alt="Пример изображения"
-             style="width: 400px;
-                    border: 7px solid #2ecc71;
-                    border-radius: 30px;">
+             id="custom-image">
     </div>
 
 
